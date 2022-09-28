@@ -2,16 +2,16 @@
 
 namespace Tabuleiro
 {
-    internal class Peca
+    class Peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
         public int qteMovimentos { get; protected set; }
         public Tabuleiros tab { get; protected set; }
 
-        public Peca(Posicao posicao, Cor cor, Tabuleiros tab)
+        public Peca(Tabuleiros tab, Cor cor)
         {
-            this.posicao = posicao;
+            this.posicao = null;
             this.cor = cor;
             this.tab = tab;
             this.qteMovimentos = 0; 

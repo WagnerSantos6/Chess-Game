@@ -8,7 +8,8 @@ namespace XadrezConsole
     {
         static void Main(string[] args)
         {
-           Tabuleiros tab = new Tabuleiros(8,8);
+            Tabuleiros tab = new Tabuleiros(8, 8);
+            Tela.imprimirTabuleiro(tab);
         }
     }
 }
